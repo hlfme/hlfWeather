@@ -13,9 +13,9 @@ public class LFWeatherOpenHelper extends SQLiteOpenHelper {
      * 省份建表语句
      */
     public static final String CREATE_PROVINCE = "create table Province ("
-            + "id integer primary key autoincrement, "
-            + "province_name text, "
-            + "province_code text, ";
+            + "id integer primary key autoincrement,"
+            + "province_name text,"
+            + "province_code text)";
 
     /**
      * 城市建表语句
