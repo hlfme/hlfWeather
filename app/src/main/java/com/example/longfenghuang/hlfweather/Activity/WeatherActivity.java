@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.longfenghuang.hlfweather.R;
+import com.example.longfenghuang.hlfweather.Service.AutoUpdateWeatherService;
 import com.example.longfenghuang.hlfweather.Util.HttpCallbackListener;
 import com.example.longfenghuang.hlfweather.Util.HttpUtil;
 import com.example.longfenghuang.hlfweather.Util.Utility;
@@ -158,6 +159,9 @@ public class WeatherActivity extends AppCompatActivity implements View.OnClickLi
         currentDateText.setText(prefs.getString("current_date",""));
         weatherInfoLayout.setVisibility(View.VISIBLE);
         cityNameText.setVisibility(View.VISIBLE);
+
+        Intent intent = new Intent(this, AutoUpdateWeatherService.class);
+        startService(intent);
     }
 
 
