@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">hlfWeather</string>
+    <string name="home">主页</string>
+    <string name="refresh">刷新</string>
 </resources>
